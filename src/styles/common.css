@@ -1,0 +1,24 @@
+body{
+    min-width: 800px;
+    min-height: 600px;
+}
+*::-webkit-scrollbar{
+    width:5px;
+    height:5px
+}
+*::-webkit-scrollbar-thumb{
+     border-radius: 10px;
+     background: rgba(0.5,0.5,0.5,0.2) ;
+ }
+*::-webkit-scrollbar-track{
+    border-radius:10px;
+    background: white;
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    border-radius: 10px;
+    background: rgba(0.7,0.7,0.7,0.5) ;
+}
+*::-webkit-scrollbar-track:hover{
+    background: #e1f0fe;
+}

@@ -1,8 +1,7 @@
 <style scoped>
-    @import 'styles/common.css';
 </style>
 <template>
-    <div>
+    <div id="app" style="height: 100%;width: 100%">
         <router-view></router-view>
     </div>
 </template>

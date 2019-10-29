@@ -1,0 +1,23 @@
+{
+  "id": "1416685",
+  "name": "微服务",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4866684",
+      "name": "用户",
+      "font_class": "user",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "7404309",
+      "name": "密码",
+      "font_class": "password",
+      "unicode": "e777",
+      "unicode_decimal": 59255
+    }
+  ]
+}

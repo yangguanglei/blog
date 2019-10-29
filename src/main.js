@@ -5,7 +5,8 @@ import Routers from './router';
 import Util from './libs/util';
 import App from './app.vue';
 import 'view-design/dist/styles/iview.css';
-
+import './assets/icon/iconfont.css';
+import './styles/common.css'
 Vue.use(VueRouter);
 Vue.use(ViewUI);
 
