@@ -73,19 +73,18 @@
     },
     methods: {
       doLogin: function () {
-        $('#userinfo .error-note').removeClass('error-note-show')
+        $('#userinfo .error-note').removeClass('error-note-show');
         var user = {};
         user.account = this.account;
         user.password = this.password;
-        if(user.account=="admin" && user.password=="1234"){
-          this.$router.push({path: '/'})
-        }
-        if(user.account!="admin"&&user.password=="1234")
-          $('#userinfo-account>.error-note').addClass('error-note-show')
-        if(user.account=="admin"&&user.password!="1234")
-          $('#userinfo-password>.error-note').addClass('error-note-show')
-        if(user.account!="admin"&&user.password!="1234") {
-          $('#userinfo-account>.error-note').addClass('error-note-show')
+        if(user.account==="admin" && user.password==="1234")
+          this.$router.push({path: '/'});
+        if(user.account!=="admin"&&user.password==="1234")
+          $('#userinfo-account>.error-note').addClass('error-note-show');
+        if(user.account==="admin"&&user.password!=="1234")
+          $('#userinfo-password>.error-note').addClass('error-note-show');
+        if(user.account!=="admin"&&user.password!=="1234") {
+          $('#userinfo-account>.error-note').addClass('error-note-show');
           $('#userinfo-password>.error-note').addClass('error-note-show')
         }
       },
