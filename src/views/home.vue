@@ -78,6 +78,31 @@
     #user-dropdown {
         text-align: right;
     }
+
+    #website-notes {
+        position: relative;
+        width: 100%;
+        height: 56px;
+        font-size: 13px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .divide-line{
+        position: relative;
+        width: 100%;
+        height: 10px;
+    }
+    .beian1 {
+        width: 260px;
+        margin: auto;
+        position: relative;
+    }
+
+    .beian2 {
+        width: 136px;
+        margin: auto;
+        position: relative;
+    }
 </style>
 
 <template>
@@ -91,19 +116,19 @@
                     <router-link to="/index" tag="li"><span>首页</span></router-link>
                 </MenuItem>
                 <MenuItem name="2">
-                    <router-link to="/index" tag="li"><span>印象笔记</span></router-link>
+                    <router-link to="/evernote" tag="li"><span>印象笔记</span></router-link>
                 </MenuItem>
                 <MenuItem name="3">
-                    <router-link to="/index" tag="li"><span>IT教程</span></router-link>
+                    <router-link to="/ITTutorial" tag="li"><span>IT教程</span></router-link>
                 </MenuItem>
                 <MenuItem name="4">
-                    <router-link to="/index" tag="li"><span>软件分享</span></router-link>
+                    <router-link to="/softwareDownload" tag="li"><span>软件分享</span></router-link>
                 </MenuItem>
                 <MenuItem name="5">
-                    <router-link to="/index" tag="li"><span>代码迭代</span></router-link>
+                    <router-link to="/codeIteration" tag="li"><span>代码迭代</span></router-link>
                 </MenuItem>
                 <MenuItem name="6">
-                    <router-link to="/index" tag="li"><span>关于我</span></router-link>
+                    <router-link to="/about" tag="li"><span>关于我</span></router-link>
                 </MenuItem>
             </Menu>
             <div id="head-right">
@@ -128,6 +153,17 @@
         </div>
         <div id="home-content">
             <router-view name="menurouter"></router-view>
+        </div>
+        <div id="website-notes">
+            <div class="divide-line">
+                <Divider orientation="center" size="small"/>
+            </div>
+            <div class="beian1">
+                <p style="color: black">博客网站&nbsp;&nbsp;&nbsp;一只菜鸟的成长之路&nbsp;&nbsp;&nbsp;--沐雨辰沨--</p>
+            </div>
+            <div class="beian2">
+                <a href="http://www.beian.miit.gov.cn/" style="color: black">滇ICP备19009196号-1</a>
+            </div>
         </div>
     </div>
 </template>
