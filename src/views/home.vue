@@ -28,9 +28,8 @@
     }
 
     #head-right {
-        display: inline-block;
         float: right;
-        margin: 14px 0;
+        margin: 14px 0 0 0;
     }
 
     #head-menu {
@@ -72,7 +71,6 @@
         position: relative;
         top: 70px;
         width: 100%;
-        overflow: hidden;
     }
 
     #user-dropdown {
@@ -84,7 +82,6 @@
         width: 100%;
         height: 56px;
         font-size: 13px;
-        background-color: rgba(0, 0, 0, 0.1);
     }
 
     .divide-line{
@@ -93,15 +90,15 @@
         height: 10px;
     }
     .beian1 {
+        position: relative;
         width: 260px;
         margin: auto;
-        position: relative;
     }
 
     .beian2 {
+        position: relative;
         width: 136px;
         margin: auto;
-        position: relative;
     }
 </style>
 
@@ -116,16 +113,19 @@
                     <router-link to="/index" tag="li"><span>首页</span></router-link>
                 </MenuItem>
                 <MenuItem name="2">
-                    <router-link to="/evernote" tag="li"><span>印象笔记</span></router-link>
+                    <!--<router-link to="/evernote" tag="li"><span>印象笔记</span></router-link>-->
+                    <router-link to="/index" tag="li"><span>印象笔记</span></router-link>
                 </MenuItem>
                 <MenuItem name="3">
-                    <router-link to="/ITTutorial" tag="li"><span>IT教程</span></router-link>
+                    <!--<router-link to="/ITTutorial" tag="li"><span>IT教程</span></router-link>-->
+                    <router-link to="/index" tag="li"><span>IT教程</span></router-link>
                 </MenuItem>
                 <MenuItem name="4">
-                    <router-link to="/softwareDownload" tag="li"><span>软件分享</span></router-link>
+                    <router-link to="/index" tag="li"><span>软件分享</span></router-link>
                 </MenuItem>
                 <MenuItem name="5">
-                    <router-link to="/codeIteration" tag="li"><span>代码迭代</span></router-link>
+                    <!--<router-link to="/codeIteration" tag="li"><span>代码迭代</span></router-link>-->
+                    <router-link to="/index" tag="li"><span>代码迭代</span></router-link>
                 </MenuItem>
                 <MenuItem name="6">
                     <router-link to="/about" tag="li"><span>关于我</span></router-link>

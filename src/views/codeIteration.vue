@@ -8,7 +8,7 @@
 </style>
 <template>
     <div id="codeIteration">
-        fan
+        FAN
     </div>
 </template>
 <script>

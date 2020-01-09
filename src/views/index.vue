@@ -1,8 +1,10 @@
 <style scoped lang="less">
-    #index-all{
+    #index-all {
+        position: relative;
         width: 100%;
         height: 1600px;
     }
+
     #head-center {
         position: relative;
         height: 200px;
@@ -39,7 +41,7 @@
 
     #content-main {
         position: relative;
-        top: 10px;
+        top: 5px;
         width: 1200px;
         height: 1100px;
         margin: auto;
@@ -59,31 +61,48 @@
         height: 1100px;
     }
 
+    .main-card {
+        width: 890px;
+        height: 275px;
+        margin-top: 5px;
+    }
+
     .info-content {
         position: relative;
         width: 100%;
-        height: 367px;
+        height: 368.6px;
+        margin-top: 5px;
     }
 
-    /*#website-notes {*/
-        /*position: relative;*/
-        /*top: 20px;*/
-        /*width: 100%;*/
-        /*height: 60px;*/
-        /*font-size: 13px;*/
-    /*}*/
+    .title-text-h {
+        margin: 0 0 10px 0;
+    }
 
-    /*.beian1 {*/
-        /*width: 260px;*/
-        /*margin: auto;*/
-        /*position: relative;*/
-    /*}*/
+    .title-text-all {
+        height: 180px;
+    }
 
-    /*.beian2 {*/
-        /*width: 136px;*/
-        /*margin: auto;*/
-        /*position: relative;*/
-    /*}*/
+    .title-text-right {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 630px;
+        margin: 0 0 0 40px;
+    }
+
+    .title-text-bottom {
+        width: 100%;
+        margin: 12px 0 0 0;
+    }
+
+    .text-a {
+        background: #f90;
+        color: #fff;
+        padding: 5px 10px;
+        float: right;
+        margin: 5px 0 0 0;
+        bottom: 0
+    }
 </style>
 <template>
     <div id="index-all">
@@ -144,28 +163,164 @@
         </div>
         <div id="content-main">
             <div id="important-content">
-                <Card style="width:890px;height: 275px">
-                    <div style="text-align:center">
-                        <img src="../assets/mainContent.png">
-                        <h3>A high quality UI Toolkit based on Vue.js</h3>
+                <Card class="main-card">
+                    <div class="title-text">
+                        <h3 class="title-text-h">只愿得一人心</h3>
+                        <div class="title-text-all">
+                            <img src="../assets/lori.png" style="float: left">
+                            <div class="title-text-right" style="float: left">
+                                <div style="height: 70%">
+                                    <p>你在合适的时候出现，却又在合适的时候离开</p>
+                                </div>
+                                <div style="height: 30%">
+                                    <a class="text-a" @click="viewContent()">阅读全文>></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text-bottom">
+                            <div>
+                                <div style="float: left;margin: 0 0 0 8px">
+                                    <Icon size="24" type="ios-alarm"/>
+                                </div>
+                                <div style="float: left;margin: 2px 0 0 5px">
+                                    <p>2020-01-01 00:00:00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>评论:&nbsp;&nbsp;[<a>20</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>阅读量:&nbsp;&nbsp;[<a>1000</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>类型:&nbsp;&nbsp;[<a>java</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 10px">
+                                    <p>作者:&nbsp;&nbsp;[<a>沐雨辰沨</a>]</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Card>
-                <Card style="width:890px;height: 275px">
-                    <div style="text-align:center">
-                        <img src="../assets/mainContent.png">
-                        <h3>A high quality UI Toolkit based on Vue.js</h3>
+                <Card class="main-card">
+                    <div class="title-text">
+                        <h3 class="title-text-h">只愿得一人心</h3>
+                        <div class="title-text-all">
+                            <img src="../assets/lori.png" style="float: left">
+                            <div class="title-text-right" style="float: left">
+                                <div style="height: 70%">
+                                    <p>你在合适的时候出现，却又在合适的时候离开</p>
+                                </div>
+                                <div style="height: 30%">
+                                    <a class="text-a" @click="viewContent()">阅读全文>></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text-bottom">
+                            <div>
+                                <div style="float: left;margin: 0 0 0 8px">
+                                    <Icon size="24" type="ios-alarm"/>
+                                </div>
+                                <div style="float: left;margin: 2px 0 0 5px">
+                                    <p>2020-01-01 00:00:00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>评论:&nbsp;&nbsp;[<a>20</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>阅读量:&nbsp;&nbsp;[<a>1000</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>类型:&nbsp;&nbsp;[<a>java</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 10px">
+                                    <p>作者:&nbsp;&nbsp;[<a>沐雨辰沨</a>]</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Card>
-                <Card style="width:890px;height: 275px">
-                    <div style="text-align:center">
-                        <img src="../assets/mainContent.png">
-                        <h3>A high quality UI Toolkit based on Vue.js</h3>
+                <Card class="main-card">
+                    <div class="title-text">
+                        <h3 class="title-text-h">只愿得一人心</h3>
+                        <div class="title-text-all">
+                            <img src="../assets/lori.png" style="float: left">
+                            <div class="title-text-right" style="float: left">
+                                <div style="height: 70%">
+                                    <p>你在合适的时候出现，却又在合适的时候离开</p>
+                                </div>
+                                <div style="height: 30%">
+                                    <a class="text-a" @click="viewContent()">阅读全文>></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text-bottom">
+                            <div>
+                                <div style="float: left;margin: 0 0 0 8px">
+                                    <Icon size="24" type="ios-alarm"/>
+                                </div>
+                                <div style="float: left;margin: 2px 0 0 5px">
+                                    <p>2020-01-01 00:00:00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>评论:&nbsp;&nbsp;[<a>20</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>阅读量:&nbsp;&nbsp;[<a>1000</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>类型:&nbsp;&nbsp;[<a>java</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 10px">
+                                    <p>作者:&nbsp;&nbsp;[<a>沐雨辰沨</a>]</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Card>
-                <Card style="width:890px;height: 275px">
-                    <div style="text-align:center">
-                        <img src="../assets/mainContent.png">
-                        <h3>A high quality UI Toolkit based on Vue.js</h3>
+                <Card class="main-card">
+                    <div class="title-text">
+                        <h3 class="title-text-h">只愿得一人心</h3>
+                        <div class="title-text-all">
+                            <img src="../assets/lori.png" style="float: left">
+                            <div class="title-text-right" style="float: left">
+                                <div style="height: 70%">
+                                    <p>你在合适的时候出现，却又在合适的时候离开</p>
+                                </div>
+                                <div style="height: 30%">
+                                    <a class="text-a" @click="viewContent()">阅读全文>></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-text-bottom">
+                            <div>
+                                <div style="float: left;margin: 0 0 0 8px">
+                                    <Icon size="24" type="ios-alarm"/>
+                                </div>
+                                <div style="float: left;margin: 2px 0 0 5px">
+                                    <p>2020-01-01 00:00:00</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>评论:&nbsp;&nbsp;[<a>20</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>阅读量:&nbsp;&nbsp;[<a>1000</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 0px">
+                                    <p>类型:&nbsp;&nbsp;[<a>java</a>]</p>
+                                </div>
+                                <div style="float: right;margin: 0 20px 0 10px">
+                                    <p>作者:&nbsp;&nbsp;[<a>沐雨辰沨</a>]</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </Card>
             </div>
@@ -190,22 +345,18 @@
                 </div>
             </div>
         </div>
-        <!--<div id="website-notes">-->
-            <!--<div class="beian1">-->
-                <!--<p style="color: black">博客网站&nbsp;&nbsp;&nbsp;一只菜鸟的成长之路&nbsp;&nbsp;&nbsp;&#45;&#45;沐雨辰沨&#45;&#45;</p>-->
-            <!--</div>-->
-            <!--<div class="beian2">-->
-                <!--<a href="http://www.beian.miit.gov.cn/" style="color: black">滇ICP备19009196号-1</a>-->
-            <!--</div>-->
-        <!--</div>-->
     </div>
 </template>
 <script>
-
     export default {
         data() {
             return {
                 value2: 0,
+            }
+        },
+        methods: {
+            viewContent: function () {
+                this.$router.push({path: '/detailedView'});
             }
         }
     }
